@@ -258,16 +258,16 @@
         align-self: center;
     }
     .welcome--header-container-top {
-        font-size: xx-small;
+        font-size: large;
     }
     .welcome--header-container-bottom {
-        font-size: small;
+        font-size: xx-large;
         margin-bottom: 10px;
     }
     .welcome--info {
         color: #fff;
         padding: 8px 30px;
-        font-size: small;
+        font-size: x-large;
         width: 80vw;
     }
     .services-buttons-pane {

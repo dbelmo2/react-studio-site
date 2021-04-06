@@ -1,0 +1,10 @@
+.Sfxvfx--under-construction {
+    width: 80vw;
+}
+.Sfxvfx--container {
+    height: 100vh;
+    background-color: #18191a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

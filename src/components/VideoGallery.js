@@ -84,7 +84,7 @@ function VideoGallery({galleryData}) {
                                     </div>
 
                                     <div className="gallery--video-content">
-                                        {(descActive[idex] || mobileMode ? (item.hasLink ? <a className="link" href={item.link}> More </a> : null) : (null))}
+                                        {(descActive[idex] || mobileMode ? (item.hasLink ? <a className="link" href={item.link}> {item.label} </a> : null) : (null))}
                                     </div>
                                 </div>
                                 <div className={ mobileMode? ("gallery--desc-container") : (descActive[idex]? (item.inverse ? "gallery--desc-container-active-inverse" : "gallery--desc-container-active") : (item.inverse ? "gallery--desc-container-inverse": "gallery--desc-container"))}>
