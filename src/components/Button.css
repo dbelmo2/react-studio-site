@@ -1,5 +1,5 @@
 :root {
-    --primary: #005ae0;
+    --primary: #00308F;
 }
 
 .btn {
@@ -31,6 +31,10 @@
     width: 10rem;
     align-self: center;
     z-index: 4;
+}
+.video:hover {
+    box-shadow: 3px 10px 10px #000;
+    transition: all 0.5 ease-in;
 }
 
 .btn--medium {
@@ -70,14 +74,14 @@
 
 .btn--wide:hover {
     color: #fff;
-    background-color: #005ae0;
+    background-color: #00308F;
     color: #242424;
     transition: all 0.2s ease-out;
 }
 
 
 .blue {
-    background-color: #005ae0;
+    background-color: #00308F;
     color: #fff;
     border: none;
 }

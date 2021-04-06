@@ -1,0 +1,105 @@
+.photography--container {
+    background-color: #18191a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.photography--content-wrapper {
+    padding: 3vh 2vw;
+    min-height: 99vh;
+    display: flex;
+    width: 90vw;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #242526;
+    box-shadow: 0px 2px 10px #090909;
+
+}
+.photography--text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 25vw;
+    align-self: center;
+}
+.photography--header-top-wrapper {
+    padding: 1px 1px;
+    color: #1967FF;
+}
+.photography--header-bottom-wrapper {
+    padding: 1px 1px;
+    color: #fff
+}
+.photography--body-wrapper {
+    padding: 1px 1px;
+    color: #fff
+}
+.photography--body {
+    color: white;
+}
+.photography--header-bottom {
+    font-size: 60px;
+}
+.photography--header-top {
+    
+}
+.photography--image-wrapper {
+    transform:rotate3d(.5,-.866,0,15deg) rotate(1deg);
+    box-shadow:2em 4em 6em -2em rgba(0,0,0,.5), 1em 2em 3.5em -2.5em rgba(0,0,0,.5);
+    transition: transform .4s ease, box-shadow .4s ease;
+    border-radius: 12px;
+    height: 40vw;
+    width: 40vw;
+    align-self: center;
+}
+
+.photography--image-wrapper:hover {
+    transform: rotate3d(0,0,0,0deg) rotate(0deg);
+}
+.photography--img {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+@media screen and (max-width: 890px) {
+    .photography--body {
+        font-size: medium;
+    }
+    .photography--header-bottom {
+        font-size: 10vw;
+    }
+    .photography--header-top {
+        font-size:3vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .photography--content-wrapper {
+        flex-direction: column;
+    }
+    .photography--body {
+        font-size: large;
+    }
+    .photography--header-top {
+        font-size: 4vw;
+    }
+    .photography--header-bottom {
+        font-size: 15vw;
+    }
+    .photography--text-wrapper {
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 80vw;
+        height: 80vw;
+    }
+    .photography--image-wrapper {
+        transform: none;
+        height: 85vw;
+        width: 85vw;
+    }
+
+}

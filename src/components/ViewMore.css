@@ -1,0 +1,51 @@
+.ViewMore--container {
+    background-color: #18191a;
+    height: 20vh;
+}
+.ViewMore--wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ViewMore--title {
+    color: white;
+    font-size: x-large;
+    transition: all 0.2s ease-in-out;
+}
+.ViewMore--title-active {
+    
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+
+.ViewMore--button {
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #000 0px 10px 14px -9px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.ViewMore--button:hover {
+    background-color: white;
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+}
+.ViewMore--icon {
+    color:white;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.ViewMore--icon-active {
+    color: #1967FF;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+
+}

@@ -1,0 +1,110 @@
+.BasicHero--container {
+    background-color: #18191a;
+    min-height: 40.5vw;
+    display: flex;
+    justify-content: center;    
+}
+.BasicHero--wrapper {
+    display: flex;
+    width: 75vw;
+    height: 40.5vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 9px 0px 0px rgba(0, 0, 0, 0.0), 0 -9px 0px 0px rgba(0, 0, 0, 0.0), 12px 0 15px -4px #090909, -12px 0 15px -4px #090909;
+
+    
+}
+
+.BasicHero--text-container {
+    background-color: #18191a;
+    width: 37.5vw;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BasicHero--header-top {
+    font-size: 2.4vw;
+    color:#1967FF;
+}
+
+.BasicHero--header-bottom-wrapper {
+    color:#fff;
+}
+.BasicHero--header-bottom {
+    font-size:4.5vw;
+}
+.BasicHero--body-wrapper {
+    width: 30vw;
+    color: #fff;
+}
+
+.BasicHero--body {
+    font-size: medium;
+}
+.BasicHero--image-container {
+    width: 37.5vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.BasicHero--image-style {
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.BasicHero--logo-style {
+    width: 30vw;
+}
+@media screen and (max-width: 750px) {
+    .BasicHero--header-top {
+        font-size: x-large;
+    }
+
+
+    .BasicHero--container {
+        align-items: flex-end;
+    }
+    .BasicHero--wrapper {
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        box-shadow: none;
+    
+    }
+    .BasicHero--image-container {
+        width: 100vw;
+        height: 100Vw;
+    }
+    .BasicHero--image-style {
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+    
+    }
+    .BasicHero--logo-style {
+        width: 80vw;
+    }
+    .BasicHero--text-container {
+        width: 80vw;
+        height: 80vw;
+    }
+    .BasicHero--body-wrapper {
+        width: 65vw;
+
+    }
+    .BasicHero--body {
+        font-size: medium;
+    }
+    .BasicHero--header-bottom {
+        font-size:8.5vw;
+    }
+}

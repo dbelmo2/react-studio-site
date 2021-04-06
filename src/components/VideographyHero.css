@@ -1,0 +1,155 @@
+.VideographyHero--container {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #18191a;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.VideographyHero--wrapper {
+    background-color: #18191a;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+    min-height: 100vh;
+    width: 100vw;
+    
+
+      
+}
+.VideographyHero--content-wrapper {
+    width: 90vw;
+    height: 100vh;
+    background-color: #242526;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 10px;
+    box-shadow: 0px 2px 10px #090909;
+
+}
+.VideographyHero--desc-wrapper {
+    width: 25vw;
+    justify-content: center;
+}
+.VideographyHero--partners-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    
+}
+.VideographyHero--gallery-table-img {
+    width: 15vw;
+    height: 11vw;
+    border-radius: .5em;
+}
+.VideographyHero--header-wrapper-bottom {
+    color:white;
+    font-size: x-large;
+}
+
+.VideographyHero--header-wrapper-top {
+    color:#1967ff;
+    font-size: medium;
+}
+.VideographyHero--body-wrapper {
+    color: white;
+    font-size: large;
+    margin-top: 3px;
+}
+.VideographyHero--header {
+
+}
+.VideographyHero--body {
+
+}
+
+.VideographyHero--image-style {
+    width: 15vw;
+    height: 15%;
+    padding: 1vw 1vw;
+}
+
+.VideographyHero--partners-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+@media screen and (max-width:900px) {
+
+    .VideographyHero--header-wrapper-top {
+        font-size: small;
+    }
+    .VideographyHero--body-wrapper {
+        color: white;
+        font-size: small;
+    }
+    .VideographyHero--header-wrapper-bottom {
+        color:white;
+        font-size: large;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    .VideographyHero--content-wrapper {
+        width: 90vw;
+        height: 100%;
+        background-color: #242526;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 10px;
+        box-shadow: 0px 2px 10px #090909;
+    
+    }
+    .VideographyHero--desc-wrapper {
+        width: 70vw;
+        margin-top: 10%;
+    }
+
+    
+.VideographyHero--header-wrapper-bottom {
+    color:white;
+    font-size: xx-large;
+}
+
+.VideographyHero--header-wrapper-top {
+    color:#1967ff;
+    font-size: medium;
+}
+.VideographyHero--body-wrapper {
+    color: white;
+    font-size: large;
+}
+.VideographyHero--partners-wrapper {
+    width: 90vw;
+    height: 100%;
+}
+.VideographyHero--partners-bar {
+    align-self: center;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.VideographyHero--image-style {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    
+    
+}
+
+
+
+}

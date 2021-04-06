@@ -1,0 +1,186 @@
+.CinemaHero--container {
+    min-height: 100vh;
+    backdrop-filter: black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.CinemaHero--wrapper {
+    background-color: #18191a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;   
+}
+.CinemaHero--title-wrapper {
+    color: white;
+    align-self: center;
+}
+.CinemaHero--title-top-wrapper {
+    color: #1967FF;
+}
+.CinemaHero--title-bottom-wrapper {
+    
+}
+.CinemaHero--photos-pane {
+    width: 80vw;
+    height: 50vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.CinemaHero--profile-container {
+  
+    transform:
+      perspective(750px)
+      translate3d(0px, 0px, -250px)
+      rotateX(27deg)
+      scale(0.9, 0.9);
+    border-radius: 20px;
+    border: 5px solid #383838;
+    border-width: 2px;
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+  
+
+  }
+  .CinemaHero--profile-container:hover {
+    transform: translate3d(0px, 0px, -250px);
+    box-shadow: 0 30px 40px -10px rgba(25, 103, 255, 0.2);
+
+  }
+.CinemaHero--img-style {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+}
+.CinemaHero--profile-wrapper {
+    border-radius: 20px;
+    border-width: 2px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 10px;
+
+
+}
+.CinemaHero--desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+.CinemaHero--desc-header-container {
+    color: #fff;
+    border: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.CinemaHero--desc-body-container {
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.CinemaHero--photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    height: 40%;  
+}
+.CinemaHero--profile-header {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+.CinemaHero--profile-header:hover {
+    color: #00308f;
+    transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+    .CinemaHero--desc-header-container {
+        font-size: xx-small;
+    }
+    .CinemaHero--profile-header {
+        font-size: large;
+    }
+    .CinemaHero--profile-desc {
+        font-size: small;
+    }
+}
+@media screen and (max-width: 750px) {
+    
+    .CinemaHero--wrapper {
+        align-items: center;
+        justify-content: start;
+        height: 100%;
+    }
+    .CinemaHero--photos-pane {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90vw;
+        height: 100%;
+        padding: 1vh 0vw;
+    }
+
+    .CinemaHero--profile-container {
+        width: 80vw;
+        transform: none;
+        height: 100vw;
+        border-radius: 12px;
+        border: 2px solid #383838;
+        box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+        transition: 0.4s ease-in-out transform;
+        margin-bottom: 10vh;
+      }
+      .CinemaHero--profile-container:hover {
+        transform: none;
+        box-shadow: none;
+
+      }
+    .CinemaHero--img-style {
+        width: 100%;
+        height: 100%;
+    }
+    .CinemaHero--photo-container {    
+        height: 100%;  
+    }
+    .CinemaHero--desc-header-container {
+        font-size: x-small;
+        
+    }
+    .CinemaHero--profile-header {
+        font-size: large;
+        color: #1967FF;
+
+    }
+    .CinemaHero--profile-desc {
+        font-size: medium;
+    }
+    .CinemaHero--title-wrapper {
+        color: white;
+        align-self: center;
+        font-size: xx-large;
+        width: 80vw;
+        padding: 10vh 5vw;
+    }
+    .CinemaHero--title-top-wrapper {
+        color: #1967FF;
+        font-size: large;
+    }
+    .CinemaHero--title-bottom-wrapper {
+        
+    }
+}

@@ -10,28 +10,37 @@ export default function MoreMenu({
     return (
         <>
             <div className={mobileActive ? 'MoreMenu-mobile' : 'MoreMenu'} onMouseEnter={onHoverEnter} onMouseLeave={onHoverExit}>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Cinema </Link>
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Videography </Link>
+                <Link to='/Cinema' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        Cinema 
+                    </div>
+                </Link>
+                <Link to='/Videography' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        Videography 
+                    </div>
+                </Link>
+                <Link to='/Photography' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        Photography 
+                    </div>
+                </Link>
+                <Link to='/KrezzyyFest' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        Krezzyy Fest 
+                    </div>
+                </Link>
+                <Link to='/Sfxvfx' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        SFX/VFX 
+                    </div>
+                </Link>
+                <Link to='/Contact' className='MoreMenu-link'> 
+                    <div className='MoreMenu-item'>
+                        Contact Us
+                    </div>
+                </Link>
 
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Photography </Link>
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Krezzyy Fest </Link>
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Black Lives Matter </Link>
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Contact </Link>
-                </div>
-                <div className='MoreMenu-item'>
-                    <Link to='/' className='MoreMenu-link'> Krezzyy VFX SFX </Link>
-                </div>
             </div>   
         </>
     )

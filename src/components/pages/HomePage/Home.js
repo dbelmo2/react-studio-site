@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Button } from '../../Button';
+import React from 'react';
+import Footer from '../../Footer';
 import HeroSection from '../../HeroSection';
 import WelcomeSection from '../../WelcomeSection';
 import './Home.css';
@@ -7,21 +7,7 @@ import './Home.css';
 
 function Home() {
 
-    const [mobile, setMobile] = useState(false);
 
-    const showButton = () => {
-        if(window.innerWidth <=960) {
-          setMobile(true);
-        } else {
-          setMobile(false);
-        }
-      }
-
-    useEffect(() => {
-        showButton();
-      }, []);
-    
-      window.addEventListener('resize', showButton);
 
 
 
@@ -29,6 +15,7 @@ function Home() {
         <>
             <HeroSection></HeroSection>
             <WelcomeSection></WelcomeSection>
+            <Footer></Footer>
         </>
     )
 }

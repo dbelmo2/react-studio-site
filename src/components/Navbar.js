@@ -20,9 +20,7 @@ function Navbar() {
   const showButton = () => {
     if(window.innerWidth <=960) {
       setButton(false);
-      console.log("button set to false");
     } else {
-      console.log("button set to true");
       setButton(true);
     }
   }
@@ -68,47 +66,47 @@ function Navbar() {
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className='nav-item'>
-            <Link to='/HowItWorks' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
 
           <li className='nav-item'>
-            <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/About' className='nav-links' onClick={closeMobileMenu}>
               About
             </Link>
           </li>
 
-          <li className='nav-item'>
+          <li className='nav-item-more'>
             { button ? (
                   <>
 
-                    <Link onMouseEnter={handleMoreHover} onMouseLeave={handleMoreHoverStop} to='/Download' className='nav-links' >
+                    <p onMouseEnter={handleMoreHover} onMouseLeave={handleMoreHoverStop}  className='nav-links' >
                       More
-                    </Link>
+                    </p>
                     {moreHover || MoreMenuHover ? <MoreMenu {...menuProps}></MoreMenu> : (null)}
 
                   </>
                         ) : 
             (
               <>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Cinema' className='nav-links' onClick={closeMobileMenu}>
                 Cinema 
               </Link>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Videography' className='nav-links' onClick={closeMobileMenu}>
                 Videography 
               </Link>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Photography' className='nav-links' onClick={closeMobileMenu}>
                 Photography 
               </Link>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/KrezzyyFest' className='nav-links' onClick={closeMobileMenu}>
                 Krezzyy Fest 
               </Link>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
-                Black Lives Matter 
+              <Link to='/Sfxvfx' className='nav-links' onClick={closeMobileMenu}>
+                SFX/VFX
               </Link>
-              <Link to='/Download' className='nav-links' onClick={closeMobileMenu}>
-                Krezzyy VFX SFX 
+              <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
+                Contact Us
               </Link>       
 
               </>            
@@ -133,8 +131,8 @@ function Navbar() {
 
 const styles = {
   bannerLogo:{
-    width: 46,
-    height: 38,
+    width: 55,
+    height: 50,
     marginRight: 10
   }
 

@@ -1,0 +1,121 @@
+.contact--container {
+    background-color: #18191a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.contact--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    min-height: 100vh;
+    box-shadow: 2px 2px 10px #090909;
+    
+}
+.contact--banner-top {
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 0vw;
+    opacity: 0.2;
+    background-color: #000;
+}
+.contact--logo-style {
+    height: 16vw;
+    width: 17vw;
+}
+.contact--info-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3vh 0vh;
+}
+.contact--info-bar-item {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12vw;
+    padding: 5vh 1vw;
+}
+.contact--item-header {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 5px;
+    color: #1967FF ;
+    margin-bottom: 3px;
+}
+.contact--item-body {
+    font-size: small;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    word-break: break-all;
+    white-space: normal;
+    
+}
+.middle {
+    border-left-color: #383838;
+    border-right-color: #383838;
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.contact--form-wrapper {
+    width: 24vw;
+    align-self: center;
+
+}
+.contact--form-style {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    align-self: center;
+    padding: 10px 10px;
+    margin-bottom: 5vh;
+    
+}
+.contact--input {
+    margin-bottom: 0.5vw;
+    padding: 5px 10px;
+    color: white;
+    background-color: #18191a;
+    border-color:#383838;
+    border-style: solid;
+    border-width: 1.5px;
+}
+.contact--input::placeholder {
+    color:#fff
+}
+.contact--body {
+    height: 15vh;
+    padding: 5px 10px;
+    background-color: #18191a;
+    margin-bottom: 1vw;
+    color: white;
+    border-style: solid;
+    border-color: #383838;
+    border-width: 1.5px;
+    resize: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    .contact--info-bar-item {
+        width: 20vw;
+    }
+    .contact--form-wrapper {
+        width: 60vw;
+    
+    }
+    .contact--form-style {
+
+        width: 60vw;
+        
+    }
+    .contact--item-body {
+        font-size: small;
+    }
+}
